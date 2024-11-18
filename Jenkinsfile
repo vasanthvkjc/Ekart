@@ -1,4 +1,4 @@
-@Library('Sahred-Library') _
+@Library('Shared-Library') _
 pipeline {
     agent {label 'GCP' }
     tools{

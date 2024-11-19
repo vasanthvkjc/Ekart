@@ -12,8 +12,8 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                helloWorld()
-                git branch: 'main', changelog: false, credentialsId: 'Github_PAT', poll: false, url: 'https://github.com/vasanthvkjc/Ekart.git'
+                helloWorldResource()
+                checkout scm
             }
         }
         stage('Compile') {
